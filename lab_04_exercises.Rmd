@@ -1,7 +1,7 @@
 ---
 title: 'Lab #4 Exercises'
 author: "put your name here"
-date: "September 15, 2017"
+date: "Lab: Sept. 18; Due: Sept. 22."
 output: html_document
 ---
 ```{r setup, include=FALSE}
@@ -17,6 +17,8 @@ script_dir = "scripts"
 if (!dir.exists('data')) dir.create('data')
 
 library(pacman)
+if (!p_isinstalled(bindr)) p_install(bindr)
+
 p_load(zoo, xml2, tidyverse, stringr)
 
 theme_set(theme_bw(base_size = 15))
@@ -24,4 +26,67 @@ theme_set(theme_bw(base_size = 15))
 source('scripts/utils.R', chdir = T)
 source('scripts/format_md.R', chdir = T)
 source('scripts/modtran.R', chdir = T)
+source('scripts/geocarb.R', chdir = T)
 ```
+# Instructions
+
+Do the exercises described in the Lab 4 Instructions ([`lab_04_instructions.pdf`](lab_04_instructions.pdf)).
+Put your R code and answers below:
+
+# MODTRAN and longwave radiation
+
+## Chapter 7 Exercise
+
+### Exercise 7.2: The impact of clouds on longwave radiation
+
+a) _Describe what you are doing and the results you get, using text and chunks
+   of R code as appropriate. The focus here is on how and why different 
+   kinds of clouds affect the outgoing longwave radiation._
+
+b) _Describe what you are doing and the results you get, using text and chunks
+   of R code as appropriate. The emphasis here is on how and why different 
+   kinds of clouds affect the radiation going down to the surface from 
+   the atmosphere._
+
+# GEOCARB and the carbon cycle
+
+## Chapter 8 Exercises
+
+### Exercise 8.1: Weathering as a function of CO~2~
+
+) _Describe what you are doing and the results you get, using text and chunks
+   of R code as appropriate._
+
+b) _Describe what you are doing and the results you get, using text and chunks
+   of R code as appropriate._
+
+c) _Describe what you are doing and the results you get, using text and chunks
+   of R code as appropriate._
+
+d) _Describe what you are doing and the results you get, using text and chunks
+   of R code as appropriate._
+
+### Exercise 8.2: Effect of solar intensity on steady-state CO~2~ concentration
+
+a) _Describe what you are doing and the results you get, using text and chunks
+   of R code as appropriate._
+
+b) _Describe what you are doing and the results you get, using text and chunks
+   of R code as appropriate._
+
+c) _Describe what you are doing and the results you get, using text and chunks
+   of R code as appropriate._
+
+## Exercise from Chapter 10
+
+### Exercise 10.1: Long-term fate of fossil fuel CO~2~
+
+a) _Describe what you are doing and the results you get, using text and chunks
+   of R code as appropriate._
+
+b) _Describe what you are doing and the results you get, using text and chunks
+   of R code as appropriate._
+
+c) _Describe what you are doing and the results you get, using text and chunks
+   of R code as appropriate._
+

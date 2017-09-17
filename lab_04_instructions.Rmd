@@ -1,7 +1,7 @@
 ---
 title: 'Lab #4 Instructions'
 author: "Jonathan Gilligan"
-date: "September 15, 2017"
+date: "Lab: Sept. 18; Due: Sept. 22."
 output:
   pdf_document:
     includes:
