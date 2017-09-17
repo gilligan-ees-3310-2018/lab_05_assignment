@@ -28,7 +28,7 @@ work.
 * Push the changes from your local git repository to github.
 
     The last changes that you push before the due date (9:00 AM on Friday 
-    Sept. 15) will be graded.
+    Sept. 22) will be graded.
 
 I advise using git to commit changes frequently as you work and push those commits
 to github.
