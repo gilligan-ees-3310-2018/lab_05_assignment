@@ -54,7 +54,7 @@ b) _Describe what you are doing and the results you get, using text and chunks
 
 ### Exercise 8.1: Weathering as a function of CO~2~
 
-) _Describe what you are doing and the results you get, using text and chunks
+a) _Describe what you are doing and the results you get, using text and chunks
    of R code as appropriate._
 
 b) _Describe what you are doing and the results you get, using text and chunks
