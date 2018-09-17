@@ -1,7 +1,7 @@
 ---
-title: 'Lab #4 Instructions'
+title: 'Lab #5 Instructions'
 author: "Jonathan Gilligan"
-date: "Lab: Sept. 18; Due: Sept. 22."
+date: "Lab: Sept. 24; Due: Oct. 1."
 output:
   pdf_document:
     includes:
@@ -15,59 +15,20 @@ knitr::opts_chunk$set(echo = TRUE)
 # This section loads necessary R libraries and sources scripts that define 
 # useful functions format_md.
 # 
-data_dir = "data"
-script_dir = "scripts"
+data_dir = "_data"
+script_dir = "_scripts"
 
-if (!dir.exists('data')) dir.create('data')
+if (!dir.exists(data_dir)) dir.create(data_dir)
 
 library(pacman)
 p_load(zoo, xml2, tidyverse, stringr)
 
 theme_set(theme_bw(base_size = 15))
 
-source('scripts/utils.R', chdir = T)
-source('scripts/format_md.R', chdir = T)
-source('scripts/modtran.R', chdir = T)
-source('scripts/geocarb.R', chdir = T)
+source(file.path(script_dir, "utils.R"), chdir = T)
+source(file.path(script_dir, "format_md.R"), chdir = T)
+source(file.path(script_dir, "geocarb.R"), chdir = T)
 ```
-# Atmospheric Radiation and Clouds
-
-## Chapter 7 Exercise
-
-### Exercise 7.2: Clouds and Infrared.
-
-**Note:** this exercise only considers the effect of clouds on longwave
-radiation and ignores the effect of clouds on albedo, which is also important.
-
-
-a) Run the MODTRAN model with present-day CO~2~ (400 ppm) and a tropical atmosphere. 
-   Plot the outgoing infrared spectrum. 
-   
-    Now run the model with altostratus clouds and plot the new spectrum.
-    
-    Now run the model with stratus clouds and plot the new spectrum.
-
-    Describe the important differences between the spectra for the three cases.
-    Describe the differences in the intensity of outgoing infrared radiation
-    for the three cases.
-
-    How do the three spectra compare for the 700 cm^-1^ band (where CO~2~ absorbs
-    strongly) and the 900 cm^-1^ band (in the atmospheric window)?
-
-    Which kind of cloud has the greatest impact on outgoing infrared light?
-    Why?
-
-b) Now set the sensor at an altitude of 0 km and make it look up. This means
-   you are looking at the infrared coming down from the atmosphere to the ground
-   instead of going out to space from the top of the atmosphere.
-
-    Run MODTRAN first with no clouds, then with three kinds of clouds:
-    standard cirrus, altostratus, and stratus.
-   
-    For each run, plot the downward infrared spectrum.
-    Describe how the spectra compare.
-    What does this suggest about how clouds affect the ground temperature?
-
 # Carbon Cycle
 
 For the following exercises, you will use the GEOCARB model, 

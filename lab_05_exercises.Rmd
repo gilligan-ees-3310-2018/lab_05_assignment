@@ -1,7 +1,7 @@
 ---
-title: 'Lab #4 Exercises'
+title: 'Lab #5 Exercises'
 author: "put your name here"
-date: "Lab: Sept. 18; Due: Sept. 22."
+date: "Lab: Sept. 24; Due: Oct. 1."
 output: html_document
 ---
 ```{r setup, include=FALSE}
@@ -11,10 +11,10 @@ knitr::opts_chunk$set(echo = TRUE)
 # This section loads necessary R libraries and sources scripts that define 
 # useful functions format_md.
 # 
-data_dir = "data"
-script_dir = "scripts"
+data_dir = "_data"
+script_dir = "_scripts"
 
-if (!dir.exists('data')) dir.create('data')
+if (!dir.exists(data_dir)) dir.create(data_dir)
 
 library(pacman)
 if (!p_isinstalled(bindr)) p_install(bindr)
@@ -23,30 +23,14 @@ p_load(zoo, xml2, tidyverse, stringr)
 
 theme_set(theme_bw(base_size = 15))
 
-source('scripts/utils.R', chdir = T)
-source('scripts/format_md.R', chdir = T)
-source('scripts/modtran.R', chdir = T)
-source('scripts/geocarb.R', chdir = T)
+source(file.path(script_dir, "utils.R"), chdir = T)
+source(file.path(script_dir, "format_md.R"), chdir = T)
+source(file.path(script_dir, "geocarb.R"), chdir = T)
 ```
 # Instructions
 
-Do the exercises described in the Lab 4 Instructions ([`lab_04_instructions.pdf`](lab_04_instructions.pdf)).
+Do the exercises described in the Lab 5 Instructions.
 Put your R code and answers below:
-
-# MODTRAN and longwave radiation
-
-## Chapter 7 Exercise
-
-### Exercise 7.2: The impact of clouds on longwave radiation
-
-a) _Describe what you are doing and the results you get, using text and chunks
-   of R code as appropriate. The focus here is on how and why different 
-   kinds of clouds affect the outgoing longwave radiation._
-
-b) _Describe what you are doing and the results you get, using text and chunks
-   of R code as appropriate. The emphasis here is on how and why different 
-   kinds of clouds affect the radiation going down to the surface from 
-   the atmosphere._
 
 # GEOCARB and the carbon cycle
 
